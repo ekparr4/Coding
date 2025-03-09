@@ -63,16 +63,15 @@
     
 
      img{
-        width; 100%;
+        width: 100%;
      }   
        
     
     img.circle {
-        width:100px;
         aspect-ratio: 1/1;
         object-fit: cover;
         border-radius: 999px;
-        border 6px solid cornflowerblue;
+        border: 6px solid cornflowerblue;
     }
 
 
