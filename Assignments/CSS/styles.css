@@ -110,15 +110,38 @@
     }
 
 
+        /*Navigation Using Flexbox*/
+nav { 
+    background-color: #525252;
+    padding: 0 1rem;
+    display: felx;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
 
-/********** NAVIGATION **********/
+nav li {
+    margin: 0 0.5rem;
 
-    #nav-menu li a {
-        color:blue
-        }
+}
 
-    .menu-items li a {
-        color:red;
-        font-size: bold;
-        text-decoration: none;
-    }
+nav a:link, nav a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 1 rem;
+    display:block;
+    transition: ease-in-out 250ms;
+}
+
+nav a:hover {
+    background-color: cornflowerblue;
+    color: white;
+}
