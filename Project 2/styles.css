@@ -1,34 +1,10 @@
 
 /*General Styles and Layout */
 
-.background1 {
-  background-position: 0%;
-background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  overflow: scroll;
-
-}
-
-
-body {
-  display: flex;
-  background-image: url(images/blueheart.png);
-  background-size: cover;
-  background-repeat: no-repeat;
- min-width: 100%;
-  overflow: scroll;
-  display: flex;
-flex-direction: column;
-display:table;
-position: relative;
-}
 
 p {
   max-width: 200px;
 }
-
- 
 
 /* Navigation*/
 
@@ -44,9 +20,6 @@ p {
  
 
 }
-
-
-
 
 
 ul {
@@ -102,6 +75,9 @@ button:hover {
 
 #col {
     column-count: 3;
+    display: flex;
+    justify-content: center;
+
 }
 
 /* Paragraph Styles*/
@@ -109,9 +85,10 @@ h1 {
   font-family: AvenirNextLTWO1-Medium, 'Avenir', sans-serif;
   text-transform: uppercase;
     display: flex;
-    text-align: center;
-    position: relative
-    
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%; 
 }
 
 h2 {
@@ -119,15 +96,13 @@ h2 {
     font-size: xx-large;
 text-transform: uppercase;
 text-align: center;
-margin-right: 20px;
-margin-left: 200px;
-max-width: 400px;
 }
 
 h3 {
     font-family: AvenirNextLTWO1-Medium, 'Avenir', sans-serif;
     font-size: medium
-    text-transform: uppercase
+    text-transform: uppercase;
+    
 
 }
 
@@ -154,7 +129,7 @@ display: flex;
     top:50%;
     left:50%;
     margin-top:-290px;
-    margin-left:-350px;
+  
 }
 .content{
     text-align:center;
@@ -162,21 +137,60 @@ display: flex;
 }
 
 #BlueHeart {
-  align-items: center;
-  max-height: 300px;
-  max-width: 300px;
-  margin-top: 75px;
-  display: block;
-  position: relative
+  padding-top:  100px;
+  min-width: 100px;
+  min-height: 100px;
 
 }
 
-@media screen and (max-width: 500px) {
+.blueheart {
   
-.col {
-  column-count: 1;
   display: flex;
-  flex-direction: column;
+  align-self: center;
+  justify-content: center;
 }
 
+.blueheart div {
+  padding-top: 50px;
+width: 50px;
+height: 50px;
+
+}
+
+.background div {
+  width: 1200px;
+  height: auto;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 576px;
+  height: auto;
+
+}
+
+@media screen and (max-width: 700px) {
+  /* Styles for screens smaller than or equal to 768px */
+
+  #BlueHeart {
+    padding-top:  100px;
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  /* Styles for screens smaller than or equal to 768px */
+
+  #BlueHeart {
+    padding-top:  100px;
+    max-width: 450px;
+    max-height: 450px;
+  }
+  .background {
+    max-width: 320px;
+    max-height: auto;
+  }
 }
